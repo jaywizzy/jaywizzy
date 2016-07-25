@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+	<title>site administration | boogeyman</title>
+</head>
+<body>
+<P>THANK YOU FOR REGISTERING </P>
+	<table border="1px solid green" width="100%" class="table-">
+		<thead>
+			<th>id</th>
+			<th><center>name</th>
+			<th><center>subject</th>
+			<th><center>message</th>
+			<th><center>email</th>
+			<th>details</th>
+		</thead>
+		<tbody>
+			{% for all in table %}
+			<tr class="danger">
+				<td><center>{{all.id}}</td>
+				<td ><center>{{all.name}}</center></td>
+				<td><center>{{all.subject}}</td>
+				<td><center>{{all.message}}</td>
+				<td><center>{{all.email}}</td>
+				<td>
+					<center><a href="{% url 'show' all.id %}">view</a>
+					<center><a href="{% url 'editing' all.id %} ">edit</a>
+					<center><a href="{% url 'wizzo' all.id %}">delete</a>
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+		
+	</table>
+</body>
+</html>

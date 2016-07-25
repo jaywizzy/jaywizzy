@@ -1,0 +1,17 @@
+
+{% extends 'blog.html' %	}
+<body>
+{% block content %}
+	{% for posts in posts %}
+		<div class="col-md-12">
+			<p id="head">published: {{posts.published_date}}</p>
+			
+			<p>{{posts.text|linebreaks}}</p>
+			
+				
+			
+		</div>
+	{% endfor %}
+
+</body>
+	{% endblock content %}

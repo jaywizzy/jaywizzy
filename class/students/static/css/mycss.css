@@ -1,0 +1,75 @@
+/*span[name="a"]{color: red;}
+span[name="b"]{color: green;}
+span[name="c"]{color: orange;}
+span[name="d"]{color: purple;}
+span[name="e"]{color: grey;}
+span[name="f"]{color: brown;}
+span[name="g"]{color: indigo;}
+span[name="h"]{color: magenta;}*/
+#bt1:hover{ background-color: white;
+	color:#286090; 
+	/*-webkit-transform: rotate(300deg);*/}
+#bt2:hover{ background-color: white;color:#449d44; }
+
+
+/*#myNavbar ul{padding: 10px; background: #123456;}*/
+/*#myNavbar li{padding-right: 80px}*/
+/*#myNavbar ul li{display: inline-block; position: relative; line-height: 10px;text-align: left;}*/
+/*#myNavbar ul li a{display:block;  color: white;text-decoration: none;}*/
+/*#myNavbar ul li a:hover{color:green; }*/
+/*#myNavbar ul li:hover{color:#123456; }*/
+/*#myNavbar ul li ul.dropdown-#myNavbar{ background: #567890;display: none;position: absolute;border-bottom-left-radius: 40px;}*/
+/*#myNavbar ul li:hover ul.dropdown-#myNavbar{display: block;background: #123456}*/
+/*#myNavbar ul li ul.dropdown-#myNavbar li{display: block;}*/
+/*#myNavbar ul li ul.dropdown-#myNavbar li a:hover{display: block;}*/
+
+#dope{speak:spell-out;}
+
+body{ background-image: url("../bg.png");background-size: cover;}
+#wiz{marquee-style:alternate;marquee-speed:slow;}
+#border-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+#border-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+#border-left {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+}
+#border-right {
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
+#shape-1 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/shape-1.png") no-repeat;
+}
+
+#shape-2 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/shape-2.png") no-repeat;
+}
+#jay{/*background-image: url("../bamboo.jpg")*/background-color: #123456;background-size: cover; margin-top: 20px;color:white;}
+#pix{opacity: 0.8}
+#uus{font-size: 100px;}
+#c{color: #123456}

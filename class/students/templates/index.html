@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+	<title>boogeyman</title>
+	<!-- <meta charset="utf-8" content="width=device-width, initial-scale=1"> -->
+	<script type="textt/javascript" src="{% static "js/jquery.js" %}"></script>
+	<script src="{% static "js/bootstrap.js" %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/mycss.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "font-awesome/css/font-awesome.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/font-awsome.min.css" %}">
+
+</head>
+<body>
+	<div class="container-fluid " id="c"> <center><h2><b><span name="d">THis</span ><span name="e"> is</span> <span name="a">The</span> <span name="b">OFfi</span><span name="c">Cial</span> <span name="f">BOoGey</span>-<span name="g">maN</span> <span name="h">WebSitE</span></b></h2></center>
+	</div>
+	<div class="col-md-row">
+		<div class="col-md-9">
+		<div class="row">
+		<div class="col-md-5">
+			<form>
+				<button class="btn btn-active btn btn-xs glyphicon glyphicon-search"> search: 
+				</button>
+				<input  class="search" placeholder="search"></input>
+			</form>
+		</div>
+		<div class="col-md-7"> </div>
+		</div>
+		</div>
+		
+		{% block start %}
+		<div class="col-md-3">
+		<a href="/contactus/"><button class="btn btn-info btn btn-xs">contact us</button></a>
+		
+			<button class="btn btn-primary glyphicon glyphicon-log-in btn btn-sm"  data-toggle="modal" data-target="#popUpWindow"> login</button>
+
+			<div class="modal fade" id="popUpWindow">
+				<div class="modal-sm">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<p class="close" data-dismiss="modal">&times;</p>
+							<h4 class="modal-title glyphicon glyphicon-modal-window"> login</h4>
+						</div>
+
+						<div class="modal-body">
+							<form role="form" action="me.html" method="POST">
+								<div class="form-group">
+									<input  type="email" oninvalid="alert('enter a valid email')" class="form-control" placeholder="email" required >
+									</input>
+									<br>
+									<div class="form-group">
+										<input type="password" oninvalid="alert('enter a valid password')" class="form-control" placeholder="password" required></input>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-active">submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn-success glyphicon glyphicon-pencil btn btn-sm" data-toggle="mymodal" data-target="popUpWindow"> register</button>
+				<div class="modal fade" id="popUpWindow">
+				<div class="modal-sm">
+					<div class="modal-content">
+						<div class="modal-header"></div>
+						<p class="close" data-dismiss="mymodal">&times;</p>
+							<h4 class="modal-title glyphicon glyphicon-modal-window"> register</h4>
+					</div>
+					<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="email" required>
+									</input>
+									<br>
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="password" required></input>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-active">submit</button>
+						</div>
+				</div>
+					
+				</div>
+		</div>
+		{% endblock %}
+
+	</div>
+	<r>
+	<br>
+	<br>
+	<hr>
+	
+	 <!-- <nav class="navbar navbar-inverse"> -->
+  <div class="container-fluid">
+    <div class="navbar-header nav navbar-fixed">
+      <button type="button" class="navbar-toggle btn btn-info" data-toggle="collapse" data-target="#myNavbar">
+        click-me
+      </button>
+      <a class="navbar-brand" href="/babayaga/">Boogeyman</a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav nav navbar-nav navbar-right">
+			<!-- <li class="active "><a href="/paga/">Home</a></li> -->
+			<li class="dropdown"><a href="/music/"> Music</a>
+				<!-- <ul class="dropdown-menu ">
+					<li><a href="#"> American</a></li>
+					<li><a href="#"> Ghanain</a></li>
+					<li><a href="#"> Nigerian</a></li>
+					<li><a href="#"> South-African</a></li>
+					<li><a href="#"> Others</a></li>
+
+
+				
+				</ul> -->
+			</li>
+			<li class="dropdown"><a href="/videos/"> Videos</a>
+				<!-- <ul class="dropdown-menu ">
+					<li><a href="#">Football Highlights</a></li>
+					<li><a href="#"> Funny Videos</a></li>
+					<li><a href="#">Movies</a></li>
+					<li><a href="#">Music Videos</a></li>
+					<li><a href="#">Others</a></li>
+
+
+
+				</ul> -->
+			</li>
+			<li class="dropdown"><a href="/games/"> Games</a>
+				<!-- <ul class="dropdown-menu ">
+					<li><a href="#">android games</a></li>
+					<li><a href="#">java games</a></li>
+					<li><a href="#">pc games games</a></li>
+
+				</ul> -->
+			</li>
+			<li class="dropdown"><a href="/images/"> Images & Wallpapers </a>
+				<!-- <ul class="dropdown-menu "> -->
+				<!-- 	<li><a href="#">Animations</a></li>
+					<li><a href="#">Movies</a></li>
+					<li><a href="#">Sports</a></li>
+					
+				</ul> -->
+			</li>
+
+
+		</ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+{% block form %}
+	<div class="col-md-12 col-sm-12" id="menu"> 
+		<center>
+		
+		</center>
+
+	</div>
+	{% block content %}	{% block video %} {% block imgs%} {% block games%}
+	<div class="col-md-12 col-sm-12">
+		
+		
+		<div class="row" >
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!-- <ol class="carousel-indicators" >
+    <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color: red"></li>
+    <li data-target="#myCarousel" data-slide-to="1" style="background-color: orange"></li>
+    <li data-target="#myCarousel" data-slide-to="2" style="background-color: yellow"></li>
+    <li data-target="#myCarousel" data-slide-to="3" style="background-color: green"></li>
+    <li data-target="#myCarousel" data-slide-to="4" style="background-color: blue"></li>
+  </ol> -->
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    
+    <div class="item active">
+      <center><img src="{% static "img/giphy (1).gif" %}" alt="hotelT2.giffy" width="500" height="290"></center>
+    </div>
+
+    <div class="item">
+      <center><img src="{% static "img/nurse.gif" %}" alt="ninja_turtle.giffy" width="500" height="290"></center>
+    </div>
+
+    <div class="item">
+      <center><img src="{% static "imgrawrrr.gif" %}" alt="minion_rawrr.giffy" width="500" height="290"></center>
+    </div>
+
+    <div class="item">
+      <center><img src="{% static "img/giphy.gif" %}" alt="minio.giffy" width="500" height="290" ></center>
+    </div>
+    <!-- <div class="item">
+      <center><img src="{% static "critics.jpg" %}" alt="Flower" width="500" height="290"></center>
+    </div> -->
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		</div>
+</div>
+{% endblock %}	   {% endblock %}	{% endblock%}	{% endblock%} {% endblock %}
+<div class="col-md-12" id="jay">
+	<div class="row">
+		<div class="col-md-3">
+				<!-- <img src="{% static "cs006.jpg" %}" height="300" width="300" class="img-rounded" id="pix"> -->
+		<center><span id="uus"><a href="/games/" ><i class="fa fa-gamepad"></i></a></span>
+			<h4><b>DOWNLOAD GAMES</b></h4></center>
+		</div>
+		<div   class="col-md-3" >
+		<center><span id="uus"><a href="/music/" ><i class="fa fa-headphones"></i></a></span>
+				
+			<h4><b>DOWNLOAD MUSIC</b></h4></center>
+		</div>
+				
+		<div class="col-md-3"> 
+			<center><span id="uus"><a href="/videos/" ><i class="fa fa-film"></i></a></span>			
+			<h4><b>DOWNLOAD VIDEOS</b></h4></center>
+		</div>
+		<div class="col-md-3"> 
+			<center><span id="uus"><a href="/images/" ><i class="fa fa-picture-o fa-flip-vertical"></i></a></span>			
+			<h4><b>DOWNLOAD IMAGES</b></h4></center>
+
+		</div>
+	</div>
+</div>
+	
+	<br>
+	<br>
+
+	<script type="text/javascript">
+		
+		// function jay(a){
+		// 	alert ("oooooooooooooooooooooooooooooopssss " + a);
+		// 	document.write("hey "+ a);
+		// }
+		// jay(" jaywizzy");
+		// jay("tunash");
+		// jay("ade");
+		// jay("papa");
+
+	</script>
+	<span class="border-top"></span>
+	<span class="border-left"></span>
+	<span class="border-right"></span>
+	<span class="border-bottom"></span>
+	
+</body>
+</html>

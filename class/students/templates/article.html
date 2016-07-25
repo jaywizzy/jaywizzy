@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>article</title>
+</head>
+<body>
+<h1>HERE GOES YOUR ARTICLE</h1>
+<!-- {{posts}} -->
+	<form method=" " action="POST">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit" value="post" />
+	</form>
+</body>
+</html>
